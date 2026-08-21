@@ -1,0 +1,7 @@
+Model,Architecture,Regularization,Dropout,Early Stopping,Accuracy,Precision,Recall,F1
+SLP,Dense(1),None,None,No,92.11%,95.65%,91.67%,93.62%
+MLP-ReLU,Dense(64)->Dense(32)->Dense(1),None,None,No,96.49%,98.57%,95.83%,97.18%
+MLP + Early Stopping,Dense(128)->Dense(64)->Dense(1),None,None,Yes,96.49%,98.57%,95.83%,97.18%
+MLP + Dropout (0.1),Dense(128)->Dropout->Dense(64)->Dropout->Dense(1),None,0.1,Yes,96.49%,98.57%,95.83%,97.18%
+MLP + L2,"Dense(128,L2)->Dense(64,L2)->Dense(1)",L2 (0.001),None,Yes,93.86%,98.51%,91.67%,94.96%
+Final Combined,"Dense(128,L2)->Dropout->Dense(64,L2)->Dropout->Dense(1)",L2 (0.001),0.3,Yes,95.61%,98.55%,94.44%,96.45%
