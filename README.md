@@ -1,0 +1,2 @@
+# Breast-Cancer-Classification-using-Deep-Learning-SLP-MLP-Regularization
+Deep Learning project for Breast Cancer Classification using the Wisconsin Diagnostic dataset. The project compares Single-Layer Perceptron (SLP) and Multi-Layer Perceptron (MLP) models and evaluates techniques such as ReLU activation, Early Stopping, Dropout, and L2 Regularization. Model performance is compared using Accuracy, Precision.
